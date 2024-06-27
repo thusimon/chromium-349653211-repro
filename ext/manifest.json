@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "DNR-Test",
+  "version": "0.0.1",
+  "description": "test DNR when browser starts",
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "permissions": [
+    "declarativeNetRequest"
+  ]
+}
