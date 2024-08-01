@@ -1,11 +1,11 @@
 const express = require('express')
 const app = express()
-const port = 3005
+const port = 3003
 
-app.get('/', (req, res) => {
+app.get('/app/UserHome', (req, res) => {
   const extHeader = req.header('X-ext-ver');
   console.log(`X-ext-ver = ${extHeader}`);
-  res.send('Hello World!')
+  res.send(`DNR header test: value = ${extHeader}`)
 })
 
 app.listen(port, () => {
